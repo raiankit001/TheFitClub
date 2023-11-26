@@ -1,0 +1,79 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+
+.left-join{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+.left-join>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+
+.right-join{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.email-container{
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    background-color: grey;
+}
+
+.email-container>.btn{
+    color: white;
+    background-color: var(--orange);
+}
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    color: var(--lightgray);
+}
+
+.email-container>input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: var(--lightgray);
+}
+
+
+
+/* css tricks snipit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus{
+  border: none;
+  -webkit-text-fill-color: var(--lightgray);
+  -webkit-box-shadow:transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .join{
+        flex-direction: column;
+    }
+    .left-join{
+        font-size: xx-large;
+        flex-direction: column;
+    }
+    .right-join{
+     }
+}
