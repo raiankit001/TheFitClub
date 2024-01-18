@@ -1,0 +1,271 @@
+
+.landingPage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-LandingPage{
+    flex: 3;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+
+.the-best-ad{
+    margin-top: 4rem;
+    border-radius: 4rem;
+    padding: 20px 13px;
+    color:white; 
+    width: fit-content;
+    background-color: #363d42;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.the-best-ad>div{
+    z-index: 2;
+}
+.the-best-ad>span{
+    position: absolute;
+    width: 5.4rem;
+    height: 80%;
+    border-radius: 4rem;
+    left: 8px;
+    background-color: var(--orange);
+    z-index: 1;
+}
+
+.LandinPage-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white ;
+    text-overflow: inherit;
+}
+
+.LandinPage-heading>div:nth-of-type(3){
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.reaches{
+    display: flex;
+    gap: 2rem;
+}
+.reaches>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.reaches>div>span:nth-of-type(1){
+    font-size: 2rem;
+    color: white;
+}
+.reaches>div>span:nth-of-type(2){
+    color: var(--gray);
+    text-transform: none;
+}
+
+
+
+
+.landingPage-buttons{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+.landingPage-buttons>:nth-child(1){
+    width: 8rem;
+    color: white;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+}
+.landingPage-buttons>:nth-child(2){
+    width: 8rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+}
+
+
+
+
+
+.right-LandingPage{
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+    z-index: 1;
+    height: 90vh;
+}
+
+.right-LandingPage>.btn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 1rem;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+}
+
+.heart-rate>img{
+    width: 2rem;
+}
+.heart-rate>:nth-child(2){
+    color: var(--gray);
+}
+.heart-rate>:nth-child(3){
+    color: white;
+    font-size: 1.5rem ;
+}
+
+
+
+
+
+.model-img{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+.model-img-back{
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1; 
+    width: 15rem;
+}
+
+
+.calories{
+    display: flex;
+    gap:2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+
+.calories>img{
+    width: 3rem;
+}
+.calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>div>:nth-child(1){
+    color: var(--gray);
+}
+.calories>div>:nth-child(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.landing-blur{
+    width: 22rem;
+    height: 33rem;
+    left: 0;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .landingPage{
+        flex-direction: column;
+    }
+    .the-best-ad{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(.8);
+    }
+    .LandinPage-heading{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .LandinPage-heading>:nth-child(3){
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .reaches>div>span:nth-of-type(1){
+        font-size: large;
+        text-align: center;
+    }
+    .reaches>div>span:nth-of-type(2){
+        text-align: center;
+        font-size: small;
+    }
+    .landingPage-buttons{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-LandingPage{
+        position: relative;
+        background: none;
+    }
+    .heart-rate{
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+    }
+    .calories{
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+    .calories>img{
+        width: 2rem;
+    }
+    .calories>div>:nth-child(2){
+        font-size: 1rem;
+    }
+    .model-img{
+        position: relative;
+        width: 15rem;
+        left: 7rem;
+        top: 4rem;
+        align-self: center;
+    }
+    .model-img-back{
+        width: 15rem;
+        left: 2rem;
+        top: 0;
+    }
+}

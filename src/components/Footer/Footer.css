@@ -1,0 +1,49 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer-blur-1{
+    width: 26rem;
+    height: 12rem;
+    right: 15rem;
+    top: 10rem;
+    filter: blur(200px);
+    background: red;
+}
+.footer-blur-2{
+    width: 26rem;
+    height: 12rem;
+    left: 15rem;
+    top: 10rem;
+    filter: blur(200px);
+    background: rgb(255, 115, 0);
+}
+
+.footer-container>hr{
+    border: 1px solid var(--lightgray);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 6rem 0;
+}
+.social-links{
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links>a>img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer>img{
+    width: 10rem;
+}
